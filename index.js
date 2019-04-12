@@ -23,7 +23,7 @@ function nowServing(line) {
 };
 
 function takeANumber(line, Customer) {
-  line.push(name)
+  line.push(Customer)
 
   return `Welcome, ${Customer}. You are number ${line.length} in line.`
 };
