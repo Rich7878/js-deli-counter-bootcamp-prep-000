@@ -22,7 +22,7 @@ function nowServing(line) {
   return `Currently serving ${line.shift()}.`
 };
 
-function takeANumber(line, Customer) {
+function takeANumber(Customer, line) {
   line.push(Customer)
 
   return `Welcome, ${Customer}. You are number ${line.length} in line.`
