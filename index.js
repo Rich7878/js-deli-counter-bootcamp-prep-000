@@ -3,10 +3,10 @@
     return "The line is currently empty."
   }
 
-  const numbersAndNames = []
+  const numbersAndCustomers = []
 
   for (let i = 0, l = line.length; i < l; i++) {
-    numbersAndNames.push(`${i + 1}. ${line[i]}`)
+    numbersAndCustomers.push(`${i + 1}. ${line[i]}`)
   }
 
   /* Keep in mind, join() is a a shorthand for looping and building
