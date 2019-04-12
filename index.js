@@ -3,15 +3,15 @@
     return "The line is currently empty."
   }
 
-  const numbersAndCustomers = []
+  const numbersAndCustomer = []
 
   for (let i = 0, l = line.length; i < l; i++) {
-    numbersAndCustomers.push(`${i + 1}. ${line[i]}`)
+    numbersAndCustomer.push(`${i + 1}. ${line[i]}`)
   }
 
   /* Keep in mind, join() is a a shorthand for looping and building
    * into a String. */
-  return `The line is currently: ${numbersAndCustomers.join(', ')}`
+  return `The line is currently: ${numbersAndCustomer.join(', ')}`
 };
 
 function nowServing(line) {
@@ -22,8 +22,8 @@ function nowServing(line) {
   return `Currently serving ${line.shift()}.`
 };
 
-function takeANumber(line, name) {
+function takeANumber(line, Customer) {
   line.push(name)
 
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome, ${Customer}. You are number ${line.length} in line.`
 };
