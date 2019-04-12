@@ -11,7 +11,7 @@
 
   /* Keep in mind, join() is a a shorthand for looping and building
    * into a String. */
-  return `The line is currently: ${numbersAndNames.join(', ')}`
+  return `The line is currently: ${numbersAndCustomers.join(', ')}`
 };
 
 function nowServing(line) {
