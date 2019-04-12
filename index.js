@@ -19,7 +19,7 @@ function nowServing(line) {
     return "There is nobody waiting to be served!"
   }
 
-  return `Currently serving ${line.shift()}.`
+  return `Currently serving ${Customer.shift()}.`
 };
 
 function takeANumber(Customer, line) {
